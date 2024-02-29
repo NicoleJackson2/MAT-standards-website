@@ -275,3 +275,9 @@ a{
     color: #3F3250;
     text-decoration: underline;
   }
+
+  /*category pages*/
+
+  .standardHeading{
+    text-decoration: underline;
+  }
