@@ -6,7 +6,9 @@
 body {
     background: #e7dfdd;
 }
-
+p{
+    font-size: 17px;
+}
 /*nav*/
 .nav {
     position: fixed;
@@ -214,6 +216,7 @@ a{
   #title{
     padding-top: 2px;
     text-align: center;
+    text-decoration: underline;
   }
 
   .quizBtn{
