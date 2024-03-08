@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        </style>
         <head>
+            <!--page title, css, js and stylesheet links-->
             <title> MAT Standards in Scotland - Physical Health</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +9,13 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+           
             <link rel="stylesheet" href="styles.css">
-
             <script src="script.js" defer></script>
-
         </head>
 
         <body>
+            <!--nav bar-->
             <nav class="nav"> 
                 <i class="uil uil-bars navOpenBtn"></i>
                 <a href="index.html" class="logo">Home</a>
@@ -28,26 +27,28 @@
                     <li><a href="physicalHealth.html">Physical Health</a></li>
                     <li><a href="addiction.html">Addiction</a></li>
                 </ul>
+
+                <!--search bar in nav bar-->
                 <i class="uil uil-search search-icon" id="searchIcon"></i>
                 <div class="search-box">
                     <i class="uil uil-search search-icon"></i>
                     <input type="text" placeholder="Search here..."/>
                 </div>
             </nav>
-
-          
         
+            <!--main content-->
             <div class="w3-main" style="margin:100px">
 
+                <!--heading and breif description of category-->
                 <div class="w3-row w3-padding-64" style="color: #3F3250;">
                   <div class="w3-container">
                     <h1 class="w3-text" id="title">Physical Health</h1>
-                    <h3>What is this?</h3>
-                    <p style="font-size: 18px;">This category is about physical health support and mentions all standards which relate to this, including where to get help with this.</p>
-                    </div>
-                 
+                    <h3>What is this?<span class="btn" onclick="document.getElementById('text-what').style.fontSize = '18px'">-</span><span class="btn" onclick="document.getElementById('text-what').style.fontSize = '22px'">+</span></h3>
+                    <p id="text-what" style="font-size: 18px;">This category is about physical health support and mentions all standards which relate to this, including where to get help with this.</p>
+                  </div>
                 </div>
               
+                <!--outlined box with a list of standards relating to category-->
                 <div class="w3-row" style="color: #3F3250;">
                   <div class="w3-third w3-container" style="border-style: solid;">
                     <h4 class="w3-text" style="margin-bottom: 30px;">There are standards which relate to this category.</h4>
@@ -61,55 +62,54 @@
                     </ul>
                     </div>
 
-                  
+                  <!--each standard displayed what what is it, how it helps with the category and where to get help-->
                   <div class="w3-twothird w3-container" style="padding-left: 40px;">
+
                    <h4 class="standardHeading">Standard 2: Choice</h4>
-                   <h6  style="font-size: 20px;" >What is it?</h6>
-                    <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                    <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                    <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                    <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                    <p style="font-size: 18px; margin-bottom: 40px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                
-                    <h4 class="standardHeading">Standard 3: Assertive Outreach and Anticipatory Care</h4>
                     <h6  style="font-size: 20px;" >What is it?</h6>
-                     <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                     <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                     <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                     <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                     <p style="font-size: 18px; margin-bottom: 40px; ">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                        <p style="font-size: 18px;">This standard is about a person being able to decide their own medication and dosage, after discussing it with a worker. It also allows them to make changes to the medication if cirucmstances change.</p>
+                    <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
+                        <p style="font-size: 18px;">This helps with physical health as it allows medication and dosages to be changed to what best benefits the person and their circumstances, instead of having everyone on the same.</p>
+                    <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
+                        <p style="font-size: 18px; margin-bottom: 40px;">To get help with this you can contact your doctor, the NHS or any social workers you have.</p>
                 
-                     <h4 class="standardHeading">Standard 4: Harm Reduction</h4>
-                     <h6  style="font-size: 20px;" >What is it?</h6>
-                      <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                      <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                      <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                      <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                      <p style="font-size: 18px; margin-bottom: 40px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                   <h4 class="standardHeading">Standard 3: Assertive Outreach and Anticipatory Care</h4>
+                    <h6  style="font-size: 20px;" >What is it?</h6>
+                        <p style="font-size: 18px;">This standard is about providing support to those who are thought to be high risk due to drug use.</p>
+                    <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
+                        <p style="font-size: 18px;">This helps with physical health as it provides support to people high risk who will most likely have health issues from drug use.</p>
+                    <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
+                        <p style="font-size: 18px; margin-bottom: 40px; ">If you think someone is at high risk and could benefit from this you can contact your local council, or any support workers.</p>
                 
-                      <h4 class="standardHeading">Standard 5: Retention</h4>
-                      <h6  style="font-size: 20px;" >What is it?</h6>
-                       <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                       <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                       <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                       <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                       <p style="font-size: 18px; margin-bottom: 40px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                   <h4 class="standardHeading">Standard 4: Harm Reduction</h4>
+                    <h6  style="font-size: 20px;" >What is it?</h6>
+                        <p style="font-size: 18px;">This standard is about providing harm reduction to those already recieveing treatment or medication. This includes: needles and syringes, BBV testing, injecting risk assessments, wound care and naloxone.</p>
+                    <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
+                        <p style="font-size: 18px;">This helps with physical health as it teaches people harm reduction techniques that they could use on themselves or other people they may be with.</p>
+                    <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
+                        <p style="font-size: 18px; margin-bottom: 40px;">To get help with this you can contact your doctor, the NHS or any social workers you have.</p>
                 
-                       <h4 class="standardHeading">Standard 7: Primary Care</h4>
-                       <h6  style="font-size: 20px;" >What is it?</h6>
-                        <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                        <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                        <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                        <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                        <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                    
+                   <h4 class="standardHeading">Standard 5: Retention</h4>
+                    <h6  style="font-size: 20px;" >What is it?</h6>
+                        <p style="font-size: 18px;">This standard allows people to stay in treatment for as long as they want, as well as at key points in their life such as leaving hospital or prison.</p>
+                    <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
+                        <p style="font-size: 18px;">This helps with physical health as it allows treatment to continue until the person is fit enough to not recieve it any more.</p>
+                    <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
+                        <p style="font-size: 18px; margin-bottom: 40px;">To get help with this you can contact social workers or the NHS.</p>
+                
+                   <h4 class="standardHeading">Standard 7: Primary Care</h4>
+                    <h6  style="font-size: 20px;" >What is it?</h6>
+                        <p style="font-size: 18px;">This standard allows people to access their medication or support through priamry cares providers such as GP'S or community pharmacy.</p>
+                    <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
+                        <p style="font-size: 18px;">This helps with physical health as it makes accessing vital medication  much easier and more accessibile.</p>
+                    <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
+                        <p style="font-size: 18px;">YTo get help with this you can contact your doctor or social workers.</p>
                   </div>
                 </div>
               
             </div>
               
-
-
+            <!--footer-->
             <footer class="footer">
             
                 <ul class="list">
@@ -121,9 +121,6 @@
                     </li>
                 </ul>
                 <p class="copyright">Nicole Jackson @ 2024</p>
-        
-        </footer>
-        </body>
-
-    
+            </footer>
+        </body>  
 </html>

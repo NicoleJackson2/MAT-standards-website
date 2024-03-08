@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        </style>
         <head>
+            <!--page title, css, js ans styelsheet links-->
             <title> MAT Standards in Scotland - Home</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +9,13 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+            
             <link rel="stylesheet" href="styles.css">
-
             <script src="script.js" defer></script>
-
         </head>
 
         <body>
+            <!--nav bar-->
             <nav class="nav"> 
                 <i class="uil uil-bars navOpenBtn"></i>
                 <a href="index.html" class="logo">Home</a>
@@ -28,6 +27,8 @@
                     <li><a href="physicalHealth.html">Physical Health</a></li>
                     <li><a href="addiction.html">Addiction</a></li>
                 </ul>
+
+                <!--search bar in nav bar-->
                 <i class="uil uil-search search-icon" id="searchIcon"></i>
                 <div class="search-box">
                     <i class="uil uil-search search-icon"></i>
@@ -35,49 +36,51 @@
                 </div>
             </nav>
 
-          
-        
+            <!--main content-->
             <div class="w3-main" style="margin:100px">
 
+                <!--heading and breif description of MAT standards and who they help-->
                 <div class="w3-row w3-padding-64" style="color: #3F3250;">
                   <div class="w3-container">
                     <h1 class="w3-text" id="title">MAT Standards in Scotland</h1>
-                    <h3 style="text-align: center; margin-top: 20px;">What are they?</h3>
-                    <p style="text-align: center;">MAT standards stands for Medication Assisted Treatment standards. This is a set of 10 standards within Scotland that was created in 2021 to help reduce deaths and other harms, and promote recovery from drug-related issues. These standards are a framework that makes sure MAT is provided in a safe, effective and accessible way to those who need it, it allows drug treatment to be safe and accessible across Scotland. The standards help to enable people to make an informed choice about care. These standards apply to all services and organisations in Scotland that deliver care. </p>
-                    <h3 style="text-align: center;">Who do they help?</h3> 
-                    <p style="text-align: center;">The standards are there to help anyone affected by drug-related issues, including people in treatment, their families or friends. It is also there to help servies and organisations that support these people to make sure they ae giving the corret support.  .</p>
-                      
-                    </div>
-                 
+                    <h3 style="text-align: center; margin-top: 20px;">What are they? <span class="btn" onclick="document.getElementById('text-what').style.fontSize = '17px'">-</span><span class="btn" onclick="document.getElementById('text-what').style.fontSize = '22px'">+</span> </h3> 
+                    <p  id="text-what" style="text-align: center;">MAT standards stands for Medication Assisted Treatment standards. This is a set of 10 standards within Scotland that was created in 2021 to help reduce deaths and other harms, and promote recovery from drug-related issues. These standards are a framework that makes sure MAT is provided in a safe, effective and accessible way to those who need it, it allows drug treatment to be safe and accessible across Scotland. The standards help to enable people to make an informed choice about care. These standards apply to all services and organisations in Scotland that deliver care. </p>
+                    <h3 style="text-align: center;">Who do they help?<span class="btn" onclick="document.getElementById('text-who').style.fontSize = '17px'">-</span><span class="btn" onclick="document.getElementById('text-who').style.fontSize = '22px'">+</span></h3> 
+                    <p id="text-who" style="text-align: center;">The standards are there to help anyone affected by drug-related issues, including people in treatment, their families or friends. It is also there to help servies and organisations that support these people to make sure they are giving the correct support.</p>
+                  </div>
                 </div>
               
+                <!--list of all standards with links to their pages-->
                 <div class="w3-row" style="color: #3F3250;">
                   <div class="w3-twothird w3-container">
                     <h1 class="w3-text">Standards</h1>
-                    <h4>Standard 1: <a class="standards" href="standardOne.html">Same Day Access </a></h4>
-                    <h4>Standard 2: <a class="standards" href="standardTwo.html">Choice</a></h4>
-                    <h4>Standard 3: <a class="standards" href="standardThree.html">Assertive Outreach and Anticipatory Care</a></h4>
-                    <h4>Standard 4: <a class="standards" href="standardFour.html">Harm Reduction</a></h4>
-                    <h4>Standard 5: <a class="standards" href="standardFive.html">Retention</a></h4>
-                    <h4>Standard 6: <a class="standards" href="standardSix.html">Psychological Support</a></h4>
-                    <h4>Standard 7: <a class="standards" href="standardSeven.html">Primary Care</a></h4>
-                    <h4>Standard 8: <a class="standards" href="standardEight.html">Independent Advocacy and Social Support</a></h4>
-                    <h4>Standard 9: <a class="standards" href="standardNine.html">Mental Health</a></h4>
-                    <h4 style="margin-bottom: 20px;">Standard 10: <a class="standards" href="standardTen.html">Trauma Informed Care</a></h4>
-                   </div>
+
+                        <h4>Standard 1: <a class="standards" href="standardOne.html">Same Day Access </a></h4>
+                        <h4>Standard 2: <a class="standards" href="standardTwo.html">Choice</a></h4>
+                        <h4>Standard 3: <a class="standards" href="standardThree.html">Assertive Outreach and Anticipatory Care</a></h4>
+                        <h4>Standard 4: <a class="standards" href="standardFour.html">Harm Reduction</a></h4>
+                        <h4>Standard 5: <a class="standards" href="standardFive.html">Retention</a></h4>
+                        <h4>Standard 6: <a class="standards" href="standardSix.html">Psychological Support</a></h4>
+                        <h4>Standard 7: <a class="standards" href="standardSeven.html">Primary Care</a></h4>
+                        <h4>Standard 8: <a class="standards" href="standardEight.html">Independent Advocacy and Social Support</a></h4>
+                        <h4>Standard 9: <a class="standards" href="standardNine.html">Mental Health</a></h4>
+                        <h4 style="margin-bottom: 20px;">Standard 10: <a class="standards" href="standardTen.html">Trauma Informed Care</a></h4>
+                  </div>
+
+                  <!--breif quiz description and button to quiz-->
                   <div class="w3-third w3-container">
-                   <h1 style="margin-top: 20px;">Quiz!</h1>
-                   <p style="font-size: 18px; margin-top: 20px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                   <a href="quiz.html"><button class="button quizBtn">Take the Quiz!</button></a>
+                    <h1 style="margin-top: 20px;">Quiz! 
+                        <span class="btn" onclick="document.getElementById('text-quiz').style.fontSize = '17px'">-</span><span class="btn" onclick="document.getElementById('text-quiz').style.fontSize = '22px'">+</span>
+                    </h1>
+                    <p id="text-quiz" style=" margin-top: 20px;">You can take a short quiz to guide you to the standards which are most helpful for you.</p>
+                    <a href="quiz.html"><button class="button quizBtn">Take the Quiz!</button></a>
                   </div>
                 </div>
               
             </div>
               
-
-
+            <!--footer-->
             <footer class="footer">
-            
                 <ul class="list">
                     <li>
                         <a href="index.html">Home</a>
@@ -87,9 +90,6 @@
                     </li>
                 </ul>
                 <p class="copyright">Nicole Jackson @ 2024</p>
-        
-        </footer>
+            </footer>
         </body>
-
-    
 </html>

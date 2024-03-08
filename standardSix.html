@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        </style>
         <head>
+          <!--page title, css, js and stylesheet links-->
             <title>Standard 6 - Psychological Support</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +9,13 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+            
             <link rel="stylesheet" href="styles.css">
-
             <script src="script.js" defer></script>
-
         </head>
 
-        <body>
+      <body>
+        <!--nav bar-->
           <nav class="nav"> 
             <i class="uil uil-bars navOpenBtn"></i>
             <a href="index.html" class="logo">Home</a>
@@ -28,6 +27,8 @@
                 <li><a href="physicalHealth.html">Physical Health</a></li>
                 <li><a href="addiction.html">Addiction</a></li>
             </ul>
+
+            <!--search bar in nav bar-->
             <i class="uil uil-search search-icon" id="searchIcon"></i>
             <div class="search-box">
                 <i class="uil uil-search search-icon"></i>
@@ -35,59 +36,60 @@
             </div>
         </nav>
 
+        <!--main content-->
+        <div class="w3-main" style="margin:100px">
 
-          
-        
-            <div class="w3-main" style="margin:100px">
-
-                <div class="w3-row w3-padding-64" style="color: #3F3250;">
-                  <div class="w3-container">
-                    <h1 class="w3-text" id="title">Standard 6 - Psychological Support</h1>
-                    <p style="text-align: center;">This standard is about highlighting the role that positive relationships play by supporting people to develop positive relationships and new ways of coping.</p>
+          <!--heading ans short description-->
+          <div class="w3-row w3-padding-64" style="color: #3F3250;">
+            <div class="w3-container">
+              <h1 class="w3-text" id="title">Standard 6 - Psychological Support</h1>
+              <p style="text-align: center;">This standard is about highlighting the role that positive relationships play by supporting people to develop positive relationships and new ways of coping.</p>
                      
-                      <button type="button" class="collapsible" style="margin-top: 10px;">What does this standard help with?</button>
-                      <div class="content">
-                        <p>This helps to teach and build new coping strategies and highlight the importance of positive relationships. It helps with mental struggles which are just as important as physical, by providing support through psychological services.</p>
-                      </div>
+              <button type="button" class="collapsible" style="margin-top: 10px;">What does this standard help with?</button>
+              <div class="content">
+                <p id="stdSix-one">This helps to teach and build new coping strategies and highlight the importance of positive relationships. It helps with mental struggles which are just as important as physical, by providing support through psychological services.
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-one').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-one').style.fontSize = '22px'">+</span>
+                </p>
+              </div>
 
-                      <button type="button" class="collapsible">Who does it benefit?</button>
-                      <div class="content">
-                        <p>Anyone who has drug related mental health issues.</p>
-                      </div>
+              <button type="button" class="collapsible">Who does it benefit?</button>
+              <div class="content">
+                <p id="stdSix-two">Anyone who has drug related mental health issues.
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-two').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-two').style.fontSize = '22px'">+</span>
+                </p>
+              </div>
 
-                      <button type="button" class="collapsible">How to get help with this...</button>
-                      <div class="content">
-                        <p>To get help with this you can contact social workers or NHS.</p>
-                      </div>
+              <button type="button" class="collapsible">How to get help with this...</button>
+              <div class="content">
+                <p id="stdSix-three">To get help with this you can contact social workers or NHS.
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-three').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-three').style.fontSize = '22px'">+</span>
+                </p>
+              </div>
 
-                      <button type="button" class="collapsible">More detailed Information...</button>
-                      <div class="content">
-                        <p>More detailed information about this standard can be found <a class="contentLink" href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/pages/11/">here</a> on the Government website.</p>
-                      </div>
-                    </div>
-                 
+              <button type="button" class="collapsible">More detailed Information...</button>
+              <div class="content">
+                <p id="stdSix-four">More detailed information about this standard can be found <a class="contentLink" href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/pages/11/">here</a> on the Government website.
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-four').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdSix-four').style.fontSize = '22px'">+</span></p>
                 </div>
-              
-               
-              
+              </div>
             </div>
-              
-
-
-            <footer class="footer">
-            
-                <ul class="list">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/">More Information</a>
-                    </li>
-                </ul>
-                <p class="copyright">Nicole Jackson @ 2024</p>
-        
-        </footer>
+          </div>
+          
+          <!--footer-->
+          <footer class="footer">
+            <ul class="list">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/">More Information</a>
+              </li>
+            </ul>
+            <p class="copyright">Nicole Jackson @ 2024</p>
+          </footer>
         </body>
-
-    
 </html>

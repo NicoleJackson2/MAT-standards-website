@@ -31,26 +31,53 @@
                 <i class="uil uil-search search-icon" id="searchIcon"></i>
                 <div class="search-box">
                     <i class="uil uil-search search-icon"></i>
-                    <input type="text" placeholder="Search here..."/>
+                    <input  id="search" type="search" placeholder="Search here..." list="search-help" autocomplete="off"/>
+
+                    <datalist id="search-help">
+                        <option value="Mental Health">
+                        <option value="Social">
+                        <option value="Addiction">
+                        <option value="Physical Health">
+                      </datalist>
                 </div>
             </nav>
 
+            <div class="w3-main" style="margin:100px"> 
 
-            <div class="w3-main" style="margin-top:150px">
-                <!--<h1>Recipe</h1>-->
-                <!--CONTENT-->
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md col-sm-12">
-                      <img src="" style="width:100%" id="img" alt="Recipe Image">
-                      <!--IMAGE-->
-                    </div>
-                    <div class="col-1"> </div>
+                <div class="w3-row w3-padding-64" style="color: #3F3250;">
+                    <div class="w3-container">
+                      <h1 class="w3-text" id="title">Search results for</h1>
+                      </div>
+                   
+                  </div>
+    
+                <div class="w3-row" style="color: #3F3250;">
+                    <div class="w3-half w3-container">
+                      <h2 class="w3-text" style="margin-bottom: 30px;">Categories:</h2>
+                      <ul style="font-size: 18px;">
+                          <li style="margin-bottom: 10px;"> <a class="" href=""></a></li>
+                          <li style="margin-bottom: 10px;"> <a class="" href=""></a></li>
+                          <li style="margin-bottom: 10px;"><a class="" href=""></a></li>
+                          <li style="margin-bottom: 30px;"> <a class="" href=""></a></li>
+                      </ul>
+                      </div>
+    
+                        <div class="w3-rest w3-container" style=" margin-left: 20px;">
+                          <h2 class="w3-text" style="margin-bottom: 30px;">Standards:</h2>
+                          <ul style="font-size: 18px;">
+                              <li style="margin-bottom: 10px;"><a class="standards" href=""></a></li>
+                              <li style="margin-bottom: 10px;"><a class="standards" href=""></a></li>
+                              <li style="margin-bottom: 10px;"><a class="standards" href=""></a></li>
+                              <li style="margin-bottom: 30px;"><a class="standards" href=""></a></li>
+                          </ul>
+                          </div>
+                    
+                       
+              
+                </div>
+                </div>
+            
 
-            </div>
-            </div>
-            </div>
-        
             <footer class="footer">
             
                 <ul class="list">

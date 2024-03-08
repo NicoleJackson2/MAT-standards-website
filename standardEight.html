@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        </style>
         <head>
+          <!--page title, css, js and stylesheet links-->
             <title>Standard 8 - Independant Advocacy and Social Support</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +9,13 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+            
             <link rel="stylesheet" href="styles.css">
-
             <script src="script.js" defer></script>
-
         </head>
 
-        <body>
+      <body>
+        <!--nav bar-->
           <nav class="nav"> 
             <i class="uil uil-bars navOpenBtn"></i>
             <a href="index.html" class="logo">Home</a>
@@ -28,66 +27,71 @@
                 <li><a href="physicalHealth.html">Physical Health</a></li>
                 <li><a href="addiction.html">Addiction</a></li>
             </ul>
+
+            <!--search bar in nav bar-->
             <i class="uil uil-search search-icon" id="searchIcon"></i>
             <div class="search-box">
                 <i class="uil uil-search search-icon"></i>
                 <input type="text" placeholder="Search here..."/>
             </div>
         </nav>
-
-
-          
         
-            <div class="w3-main" style="margin:100px">
+        <!--main content-->
+        <div class="w3-main" style="margin:100px">
 
-                <div class="w3-row w3-padding-64" style="color: #3F3250;">
-                  <div class="w3-container">
-                    <h1 class="w3-text" id="title">Standard 8 - Independant Advocacy and Social Support</h1>
-                    <p style="text-align: center;">This standard allows people to request a worker to help them with housing, welfare or income.</p>
+          <!--heading and short description-->
+          <div class="w3-row w3-padding-64" style="color: #3F3250;">
+            <div class="w3-container">
+              <h1 class="w3-text" id="title">Standard 8 - Independant Advocacy and Social Support</h1>
+              <p style="text-align: center;">This standard allows people to request a worker to help them with housing, welfare or income.</p>
                      
-                      <button type="button" class="collapsible" style="margin-top: 10px;">What does this standard help with?</button>
-                      <div class="content">
-                        <p>This standard helps to support people when using services to make sure they get what is best for them and that they have been treted fairly. </p>
-                      </div>
+              <button type="button" class="collapsible" style="margin-top: 10px;">What does this standard help with?</button>
+              <div class="content">
+                <p id="stdEight-one">This standard helps to support people when using services to make sure they get what is best for them and that they have been treated fairly. 
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-one').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-one').style.fontSize = '22px'">+</span>
+                </p>
+              </div>
 
-                      <button type="button" class="collapsible">Who does it benefit?</button>
-                      <div class="content">
-                        <p>This standard benefits anyone needing social, housing, welfare or income support.</p>
-                      </div>
+              <button type="button" class="collapsible">Who does it benefit?</button>
+              <div class="content">
+                <p id="stdEight-two">This standard benefits anyone needing social, housing, welfare or income support.
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-two').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-two').style.fontSize = '22px'">+</span>
+                </p>
+              </div>
 
-                      <button type="button" class="collapsible">How to get help with this...</button>
-                      <div class="content">
-                        <p>To get help with this you can contact social workers.</p>
-                      </div>
+              <button type="button" class="collapsible">How to get help with this...</button>
+              <div class="content">
+                <p id="stdEight-three">To get help with this you can contact social workers or advocacy workers.
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-three').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-three').style.fontSize = '22px'">+</span>
+                </p>
+              </div>
 
-                      <button type="button" class="collapsible">More detailed Information...</button>
-                      <div class="content">
-                        <p>More detailed information about this standard can be found <a class="contentLink" href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/pages/13/">here</a> on the Government website.</p>
-                      </div>
-                    </div>
-                 
-                </div>
-              
-               
-              
+              <button type="button" class="collapsible">More detailed Information...</button>
+              <div class="content">
+                <p id="stdEight-four">More detailed information about this standard can be found <a class="contentLink" href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/pages/13/">here</a> on the Government website.
+                  <!--buttons to enlarge/shrink text, not visible on mobile-->
+                  <span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-four').style.fontSize = '18px'">-</span><span class="btn" id="btnstandard" onclick="document.getElementById('stdEight-four').style.fontSize = '22px'">+</span>
+                </p>
+              </div>
+
             </div>
-              
-
-
-            <footer class="footer">
-            
-                <ul class="list">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/">More Information</a>
-                    </li>
-                </ul>
-                <p class="copyright">Nicole Jackson @ 2024</p>
+          </div>
+        </div>
         
+        <!--footer-->
+        <footer class="footer">
+          <ul class="list">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/">More Information</a>
+            </li>
+          </ul>
+          <p class="copyright">Nicole Jackson @ 2024</p>
         </footer>
-        </body>
-
-    
+      </body>
 </html>

@@ -284,3 +284,25 @@ a{
   .standardHeading{
     text-decoration: underline;
   }
+
+
+/*enlarge text button*/
+.btn{
+    background-color:#3F3250;
+    color:#e7dfdd;
+    font-size: 15px;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+.btn:hover{
+    background-color: #3F3250;
+}
+
+@media (max-width: 808px) {
+    #btnstandard {
+      display: none;
+    }
+  }
+

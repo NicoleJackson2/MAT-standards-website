@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        </style>
         <head>
+        <!--page title, css, js and stylesheet links-->
             <title> MAT Standards in Scotland - Addiction</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +9,13 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+            
             <link rel="stylesheet" href="styles.css">
-
             <script src="script.js" defer></script>
-
         </head>
 
         <body>
+            <!--nav bar-->
             <nav class="nav"> 
                 <i class="uil uil-bars navOpenBtn"></i>
                 <a href="index.html" class="logo">Home</a>
@@ -28,6 +27,8 @@
                     <li><a href="physicalHealth.html">Physical Health</a></li>
                     <li><a href="addiction.html">Addiction</a></li>
                 </ul>
+
+                <!--search b ar in nav bar-->
                 <i class="uil uil-search search-icon" id="searchIcon"></i>
                 <div class="search-box">
                     <i class="uil uil-search search-icon"></i>
@@ -35,19 +36,19 @@
                 </div>
             </nav>
 
-          
-        
+            <!--main content-->
             <div class="w3-main" style="margin:100px">
 
+                <!--heading and brief description of category-->
                 <div class="w3-row w3-padding-64" style="color: #3F3250;">
                   <div class="w3-container">
                     <h1 class="w3-text" id="title">Addiction</h1>
-                    <h3>What is this?</h3>
-                    <p style="font-size: 18px;">This category is about addiction support and mentions all standards which relate to this, including where to get help with this.</p>
-                    </div>
-                 
+                    <h3>What is this?<button class="btn" onclick="document.getElementById('text-what').style.fontSize = '18px'">-</button><button class="btn" onclick="document.getElementById('text-what').style.fontSize = '22px'">+</button></h3>
+                    <p id="text-what" style="font-size: 18px;">This category is about addiction support and mentions all standards which relate to this, including where to get help with this.</p>
+                  </div>
                 </div>
               
+                <!--outlined box with a list of standards relating to the category-->
                 <div class="w3-row" style="color: #3F3250;">
                   <div class="w3-third w3-container" style="border-style: solid;">
                     <h4 class="w3-text" style="margin-bottom: 30px;">There are standards which relate to this category.</h4>
@@ -58,51 +59,49 @@
                         <li style="margin-bottom: 10px;">Standard 3: <a class="standards" href="standardThree.html">Assertive Outreach and Anticipatory Care</a></li>
                         <li style="margin-bottom: 30px;">Standard 7: <a class="standards" href="standardSeven.html">Primary care </a></li>
                     </ul>
-                    </div>
+                  </div>
 
-                
+                <!--each standard displayed what what is it, how it helps with the category and where to get help-->
                   <div class="w3-twothird w3-container" style="padding-left: 40px;">
+
                    <h4 class="standardHeading">Standard 1: Same Day Access </h4>
-                   <h6  style="font-size: 20px;" >What is it?</h6>
-                    <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                    <h6  style="font-size: 20px;" >What is it?</h6>
+                        <p style="font-size: 18px;">This standard is about getting access to medication immediately instead of having to wait weeks, or possibly months to start.</p>
                     <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                    <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                        <p style="font-size: 18px;">This helps with addiction as it allows the person to get medication the same day they need it instead of waiting, which could potentially stop them from taking dangerous substances instead.</p>
                     <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                    <p style="font-size: 18px; margin-bottom: 40px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                        <p style="font-size: 18px; margin-bottom: 40px;">To get help with this you can contact your doctor, the NHS or social workers.</p>
                 
                     <h4 class="standardHeading">Standard 2: Choice</h4>
-                    <h6  style="font-size: 20px;" >What is it?</h6>
-                     <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                     <h6  style="font-size: 20px;" >What is it?</h6>
+                         <p style="font-size: 18px;">This standard is about a person being able to decide their own medication and dosage, after discussing it with a worker. It also allows them to make changes to the medication if cirucmstances change.</p>
                      <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                     <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                         <p style="font-size: 18px;">This helps with addiction as it allowes the person to make their own decisions on their medication and dosage with the help of a professional, helping them to better understand their medication and take control over their own choices.</p>
                      <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                     <p style="font-size: 18px; margin-bottom: 40px; ">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                         <p style="font-size: 18px; margin-bottom: 40px; ">To get help with this you can contact your doctor, the NHS or any social workers you have.</p>
                 
                      <h4 class="standardHeading">Standard 3: Assertive Outreach and Anticipatory Care</h4>
-                     <h6  style="font-size: 20px;" >What is it?</h6>
-                      <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                      <h6  style="font-size: 20px;" >What is it?</h6>
+                         <p style="font-size: 18px;">This standard is about providing support to those who are thought to be high risk due to drug use.</p>
                       <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                      <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                         <p style="font-size: 18px;">This helps with addiction by providing support to those who need it. By contacting someone at high risk, it could be potentially life saving.</p>
                       <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                      <p style="font-size: 18px; margin-bottom: 40px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                         <p style="font-size: 18px; margin-bottom: 40px;">If you think someone is at high risk and could benefit from this you can contact your local council, or any support workers.</p>
                 
                        <h4 class="standardHeading">Standard 7: Primary Care</h4>
-                       <h6  style="font-size: 20px;" >What is it?</h6>
-                        <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                        <h6  style="font-size: 20px;" >What is it?</h6>
+                          <p style="font-size: 18px;">This standard allows people to access their medication or support through priamry cares providers such as GP'S or community pharmacy. </p>
                         <h6  style="font-size: 20px; margin-top: 50px" >How does this help with the category?</h6>
-                        <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
+                          <p style="font-size: 18px;">This helps with addiction as it makes it easier for people to get access to their medication/treatment by being able to use primary care providers for this. It also makes treatment more seamless for the person as it helps create a partnership between all health and social care areas.</p>
                         <h6 style="font-size: 20px; margin-top: 50px" >Where to get help?</h6>
-                        <p style="font-size: 18px;">You can take a short quiz to guid you to the standards which are most helpful for you.</p>
-                    
-                  </div>
+                          <p style="font-size: 18px;">To get help with this you can contact your doctor or social workers.</p>
+                    </div>
                 </div>
               
             </div>
-              
 
-
+            <!--footer-->
             <footer class="footer">
-            
                 <ul class="list">
                     <li>
                         <a href="index.html">Home</a>
@@ -113,8 +112,6 @@
                 </ul>
                 <p class="copyright">Nicole Jackson @ 2024</p>
         
-        </footer>
+            </footer>
         </body>
-
-    
 </html>
