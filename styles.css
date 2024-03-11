@@ -32,7 +32,12 @@ p{
 }
 
 a{
-    color: #e7dfdd;
+    color: #3F3250;
+    text-decoration: underline;
+}
+
+.darkA{
+    color:#e7dfdd;
     text-decoration: none;
 }
 
@@ -91,7 +96,7 @@ a{
     border: none;
     outline: none;
     border-radius: 6px;
-    background-color: #e7dfdd;
+    background-color: #fff;
     padding: 0 15px 0 45px;
 }
 
@@ -306,3 +311,27 @@ a{
     }
   }
 
+  /*search page/ bar */
+#searchPageBar{
+    width: 300px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+ 
+}
+
+.searchDisplay{
+    margin-top: 20px;
+}
+
+.searchPageBox{
+    width: 100%;
+    text-align:center;
+}
+
+@media (max-width: 600px) {
+    #categorySearch {
+     padding-left: 20px;
+    }
+  }
