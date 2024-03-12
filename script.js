@@ -1,36 +1,31 @@
 
-
-
-/*JS for nav bar*/
+/*nav bar*/
 const nav = document.querySelector(".nav"),
-    searchIcon = document.querySelector("#searchIcon"),
+    searchIcon = document.querySelector("#searchIcon");
     navOpenBtn = document.querySelector(".navOpenBtn"),
     navCloseBtn = document.querySelector(".navCloseBtn");
    
-
+/*if search icon is clicked, take to search page*/ 
     searchIcon.addEventListener("click", () => {
        window.location = "./search.html";
-        nav.classList.toggle("openSearch");
-        nav.classList.remove("openNav");
-        if (nav.classList.contains("openSearch")) {
-           return searchIcon.classList.replace("uil-search", "uil-times");
-        }
-        searchIcon.classList.replace("uil-times", "uil-search");
       
     });
-    
+  
+    /*open and close buttons for side nav bar on mobile view*/
     navOpenBtn.addEventListener("click", () => {
-        nav.classList.add("openNav");
-        nav.classList.remove("openSearch");
-        searchIcon.classList.replace("uil-times", "uil-search");
-    });
+      nav.classList.add("openNav");
+      nav.classList.remove("openSearch");
+      searchIcon.classList.replace("uil-times", "uil-search");
+  });
 
-    navCloseBtn.addEventListener("click", () => {
-        nav.classList.remove("openNav");
-    });
+  navCloseBtn.addEventListener("click", () => {
+      nav.classList.remove("openNav");
+  });
 
 
-/*JS for collapsible sections on standards pages*/
+
+
+/* collapsible sections on standards pages*/
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -48,6 +43,8 @@ for (i = 0; i < coll.length; i++) {
 }
 
 /*code for search*/
+
+/*index list for category, containing page, title and key words*/
 const categoryIndex = {
   "./addiction.html": {
    title: "Addiction",
@@ -67,6 +64,7 @@ const categoryIndex = {
   }
 };
 
+/*index list for standards, containing page, title and key words*/
   const standardsIndex = {
     "./standardOne.html": {
       title: "Standard 1",
@@ -110,12 +108,13 @@ const categoryIndex = {
      },
   }
 
+  /*get users search from search box */
   const searchBar = document.getElementById("searchPageBar");
   const searchDisplay = document.querySelector(".searchDisplay");
 
   
+  /*if enter is pressed, take text as search input */
   searchBar.addEventListener("keyup", function(e) {
-   
     if (e.keyCode === 13){
     const search = e.target.value;
     console.log(search)
@@ -125,21 +124,25 @@ const categoryIndex = {
  });
 
  
-
+/*function to normalise search and then display results */
 function mySearch(search) {
+
+/*clear both categories and standards before starting search */
 var clear = document.getElementById('categoryList');
 clear.innerHTML = "";
 
 var clear = document.getElementById('standardsList');
 clear.innerHTML = "";
-  // normalise the search paramater
+
+/* normalise the search paramater*/
   search = search.toLowerCase(); // make all lower case 
   search = search.trim(); // remove begining and end spaces 
 
- 
+/*get list of matching results to search for both */
   const categoryResults = searchPageIndexes(search, categoryIndex);
   const standardsResults = searchPageIndexes(search, standardsIndex);
  
+/* for each category that matches the sarch by keyword, display it in a list form with link to its page*/
   for (const categoryResult of categoryResults) {
     const title = categoryResult.title;
     const link = categoryResult.page;
@@ -147,8 +150,6 @@ clear.innerHTML = "";
     console.log(title);
     console.log(link);
 
-    
-    
     var list_tag = document.getElementById('categoryList');
     var list_item = document.createElement('li');
     var a = document.createElement('a');
@@ -159,7 +160,7 @@ clear.innerHTML = "";
     list_tag.appendChild(list_item);
   }
   
-
+/* for each standard that matches the sarch by keyword, display it in a list form with link to its page*/
   for (const standardsResult of standardsResults) {
     const title = standardsResult.title;
     const link = standardsResult.page;
@@ -177,29 +178,32 @@ clear.innerHTML = "";
     list_tag.appendChild(list_item);
   
   };
-
  
 };
   
-  
+/*search through indexes and get matches to search */
   function searchPageIndexes(search, pageIndexes) {
+
+ /* results is an array of objects eg {title: "addiction", page: "./addiction.html"}*/
     const results = [];
-    // results is an array of objects
-    // eg {title: "addiction", page: "./addiction.html"}
+  
     for (const page in pageIndexes) {
-      // the keys for the object
-      const { link, title, keywords } = pageIndexes[page]; // access thing from object
-      // check if search matches any of the keywords
+
+      /* the keys for the object*/
+      const { link, title, keywords } = pageIndexes[page]; 
+
+      /*check if search matches any of the keywords*/
       for (const keyword of keywords) {
+
+      /*check if search matches the keyword exactly*/
         if (keyword === search) {
-          // check if search matches the keyword exactly
           results.push({
             link: link,
             title: title,
             page: page,
           });
-  
-          break; // break from keyword loop
+        /*break from keyword loop */
+          break; 
         }
       }
     }
@@ -207,5 +211,4 @@ clear.innerHTML = "";
   }
 
 
-  
 

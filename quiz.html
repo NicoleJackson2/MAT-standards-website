@@ -12,53 +12,93 @@
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
             <link rel="stylesheet" href="styles.css">
 
-            <script src="script.js" defer></script>
+            <script src="quiz.js" defer></script>
 
         </head>
 
         <body>
-            <nav class="nav"> 
-                <i class="uil uil-bars navOpenBtn"></i>
-                <a href="index.html" class="logo">Home</a>
-                <ul class="nav-links">
-                    <i class="uil uil-times navCloseBtn"></i>
-                    <li><a href="quiz.html">Quiz</a></li>
-                    <li><a href="social.html">Social</a></li>
-                    <li><a href="mentalHealth.html">Mental Health</a></li>
-                    <li><a href="physicalHealth.html">Physical Health</a></li>
-                    <li><a href="addiction.html">Addiction</a></li>
-                </ul>
-                <i class="uil uil-search search-icon" id="searchIcon"></i>
+          <!--nav bar-->
+          <nav class="nav"> 
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a  class="darkA" href="index.html" class="logo">Home</a>
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a class="darkA" href="quiz.html">Quiz</a></li>
+                <li><a class="darkA" href="social.html">Social</a></li>
+                <li><a class="darkA" href="mentalHealth.html">Mental Health</a></li>
+                <li><a class="darkA" href="physicalHealth.html">Physical Health</a></li>
+                <li><a class="darkA"href="addiction.html">Addiction</a></li>
+            </ul>
+            <!--search bar which takes you to search page-->
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
                 <div class="search-box">
                     <i class="uil uil-search search-icon"></i>
-                    <input type="text" placeholder="Search here..."/>
+                    <input  id="searchBar" type="search" placeholder="Search here..." list="search-help" autocomplete="off"/>
+
+                    
                 </div>
-            </nav>
+        </nav>
 
 
-            <div class="w3-main" style="margin-top:150px">
-                <!--<h1>Recipe</h1>-->
-                <!--CONTENT-->
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md col-sm-12">
-                      <img src="" style="width:100%" id="img" alt="Recipe Image">
-                      <!--IMAGE-->
+            <div class="w3-main" style="margin-top:100px;">
+                <div class="w3-row w3-padding-64" style="color: #3F3250;">
+                    <div class="w3-container">
+                    <h1 class="w3-text" id="title">Quiz</h1>
+                    <h3 style="text-align: center; margin-top: 20px;">Take this short quiz to guide you to the most suitable help for you.</h3>
+                   
+                    <div class="w3-twothird formStyle" style="margin-top: 50px; font-size: 20px;" >
+                   
+
+                    <form>
+                      <p style="font-size: 20px;">Which Category would be most helpful?</p>
+                      <input type="radio" id="addiction" name="category" value="Addiction">
+                      <label for="addiction">Addiction</label><br>
+                      <input type="radio" id="mentalHealth" name="category" value="Mental Health">
+                      <label for="mentalHealth">Mental Health</label><br>
+                      <input type="radio" id="social" name="category" value="Social">
+                      <label for="social">Social</label><br>
+                      <input type="radio" id="physicalHealth" name="category" value="Physical health">
+                      <label for="physicalHealth" style="margin-bottom: 30px;">Physical Health</label>
+
+                      <p style="font-size: 20px;">What is most important?</p>
+                      <input type="radio" id="medication" name="important" value="Accessing Medication">
+                      <label for="medication">Accessing Medication</label><br>
+                      <input type="radio" id="treatment" name="important" value="Accessing Treatment">
+                      <label for="treatment">Accessing Treatment</label><br>
+                      <input type="radio" id="MHSupport" name="important" value="Accessing Mental Health Support">
+                      <label for="MHSupport">Accessing Mental Health support</label><br>
+                      <input type="radio" id="highRisk" name="important" value="Accessing help for high risk">
+                      <label for="highRisk">Getting help for someone high risk</label><br>
+                      <input type="radio" id="socialSupport" name="important" value="Accessing Social support">
+                      <label for="social" style="margin-bottom: 30px;">Accessing social support</label><br><br>
+                    
+
+                        <button id="submitBtn" style="padding:10px;" type='button'>Submit</button> 
+
+                    </form>
                     </div>
-                    <div class="col-1"> </div>
 
-            </div>
-            </div>
+                    <div class="w3-third" style="margin-top: 50px;">
+                        <h2 style="margin-bottom: 30px;">Results:</h2>
+                        <h4>Categories:</h4>
+                        <ul  id="resultsCategories" style="font-size: 22px;">
+                        </ul> 
+                        <h4 style="margin-top: 40px;">Standards:</h4>
+                        <ul id="resultsStandards" style="font-size:22px;">
+                        </ul>
+
+                    </div>
+                    </div>
+                    </div>
             </div>
         
             <footer class="footer">
-            
                 <ul class="list">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a  class="darkA" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/">More Information</a>
+                        <a class=" darkA" href="https://www.gov.scot/publications/medication-assisted-treatment-mat-standards-scotland-access-choice-support/">More Information</a>
                     </li>
                 </ul>
                 <p class="copyright">Nicole Jackson @ 2024</p>
